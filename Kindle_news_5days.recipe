@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class AdvancedUserRecipe1603185620(BasicNewsRecipe):
+    title          = 'Kindle_news'
+    oldest_article = 5
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('9to5Google', 'https://9to5google.com/feed/'),
+        ('The Verge', 'http://www.theverge.com/rss/index.xml'),
+        ('Atlas Obscura', 'http://atlasobscura.com/rss.xml'),
+        ('Techradar - All the latest technology news', 'http://www.techradar.com/rss'),
+        ('CNET News', 'http://feeds.feedburner.com/cnet/tcoc'),
+        ('CNN.com - Top Stories', 'http://rss.cnn.com/rss/cnn_topstories.rss'),
+        ('Toms Hardware', 'https://www.tomshardware.com/feeds/all'),
+        ('Engadget', 'http://www.engadget.com/rss.xml'),
+        ('Hacker News', 'https://news.ycombinator.com/rss'),
+        ('WIRED', 'http://feeds.wired.com/wired/index'),
+        ('MacRumors - Front Page', 'http://www.macrumors.com/macrumors.xml'),
+        ('AppleInsider', 'https://appleinsider.com/rss/news'),
+        ('9to5Mac', 'https://9to5mac.com/feed/'),
+        ('LaptopMedia.com', 'http://laptopmedia.com/feed/'),
+        ('Il Messaggero', 'https://www.ilmessaggero.it/rss/home.xml'),
+        ('Il Sole 24 ORE -  Italia attualità', 'https://www.ilsole24ore.com/rss/italia--attualita.xml'),
+        ('Corriere.it - Cronache', 'http://xml.corriereobjects.it/rss/cronache.xml'),
+        ('Corriere.it - Cultura', 'http://xml2.corriereobjects.it/rss/cultura.xml'),        
+        ('Corriere.it - Salute', 'http://www.corriere.it/rss/salute.xml'),
+        ('Il Fatto Quotidiano » Cronaca', 'http://www.ilfattoquotidiano.it/category/cronaca/feed/'),
+        ('Il Fatto Quotidiano » Antonio Padellaro', 'http://www.ilfattoquotidiano.it/blog/apadellaro/feed/'),
+        ('Il Fatto Quotidiano » Ambiente & Veleni', 'http://www.ilfattoquotidiano.it/category/ambiente-veleni/feed/'),
+        ('Il Fatto Quotidiano » Mondo', 'http://www.ilfattoquotidiano.it/category/mondo/feed/'),
+        ('Il Fatto Quotidiano » Giustizia & Impunità', 'http://www.ilfattoquotidiano.it/category/giustizia-impunita/feed/'),
+        ('PCMag - Laptops', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=1565'),
+        ('PCMag - Teblets', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=27996'),
+        ('PCMag - Phones', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=1713'),
+        ('PCMag - Monitors', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=27992'),
+        ('PCMag - Werables', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=28175'),
+        ('PCMag - Headphones', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=26584'),
+        ('PCMag - E-readers', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=27995'),
+        ('PCMag - CPUs & Components', 'http://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=25300'),
+    ]
